@@ -1,0 +1,48 @@
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #1e123c;
+	color: black;
+}
+
+body {
+	background-color: #b7abd5;
+}
+
+.header {
+	background-color: #5d42a2;
+}
+
+.button {
+	background-color: #6f56ac;
+	border-color: #6f56ac;
+}
+
+.button:hover {
+	background-color: #3c2479;
+	border-color: #3c2479;
+}
+
+  .button:focus,.button:active {
+	outline: none !important;
+	box-shadow: none !important;
+	background-color: #3c2479 !important;
+	border-color: #3c2479 !important;
+ }
+
+.results {
+	margin-bottom: 30px;
+}
+
+#walletEntries:focus,#walletEntries:active {
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: #3c2479 !important;
+}
+
+.brand {
+	color: black !important;
+}
