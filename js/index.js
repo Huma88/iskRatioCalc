@@ -5,12 +5,17 @@
 
 function calculate() {
 	var wallet = document.getElementById("walletEntries").value;
-	var regexp = /(\d+\.\d+\.\d+ \d+:\d+:\d+)\D+([\d|\.]+)/g;
+	var regexp = /(\d{4}\.\d{2}\.\d{2} \d{2}:\d{2}:\d{2})\D+([\d|\.]+)/g;
 	entries = [];
 
 	while ((match = regexp.exec(wallet)) != null) {
 		entries.push(match);
 		console.log(match);
+	}
+	if (entries.length == 0) {
+		console.log("asd");
+		$('#inputError').modal();
+		return;
 	}
 	var aux;
 	var end;

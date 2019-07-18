@@ -54,11 +54,30 @@
 			<button type="button" class="btn btn-primary mb-2 button" onclick="calculate()">Calculate Ratio</button>
 		</form>
 	</div>
+	<div id="inputError" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Error</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>This data is not a valid eve online wallet, check it, and try again</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="ratios" class="container mt-5 results">
 	</div>
 	<footer class="py-3 footer ">
 		<div class="container text-center">
-			<small><a href="https://github.com/Huma88/iskRatioCalc" target="_blank">Source on github</a> | <a href="https://github.com/Huma88/iskRatioCalc/issues" target="_blank">Report an Issue</a></small>
+			<small><a href="https://github.com/Huma88/iskRatioCalc" target="_blank">Source on github</a> | <a
+					href="https://github.com/Huma88/iskRatioCalc/issues" target="_blank">Report an Issue</a></small>
 		</div>
 	</footer>
 </body>
